@@ -32,12 +32,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(openSignupActivity)
         }
         binding.idButtonLogin.setOnClickListener(){
-            login()
+            var openActivityGamesBinding = Intent( this, activity_games:: class.java)
+
+            startActivity((openActivityGamesBinding))
         }
-//        binding.buttonNextPage.setOnClickListener(){
-//            var op = Intent(this, ActivityGames::class.java)
-//            startActivity(op)
-//        }
 
     }
 
